@@ -34,7 +34,8 @@ UNDELIMITED_STAMPS_PATTERN = "|".join(
 DELIMITERS_PATTERN = r"[/\:\-\,\.\s\_\+\@]+"
 TIME_PERIOD_PATTERN = r"a\.m\.|am|p\.m\.|pm"
 ## can be in date strings but not recognized by dateutils
-EXTRA_TOKENS_PATTERN = r"due|by|on|during|standard|daylight|savings|time|date|dated|of|to|through|between|until|at|day"
+# EXTRA_TOKENS_PATTERN = r"due|by|on|during|standard|daylight|savings|time|date|dated|of|to|through|between|until|at|day"  # NOTE: old
+EXTRA_TOKENS_PATTERN = r"due|by|on|during|standard|daylight|savings|dated|of|to|through|between|until|at|day"  # NOTE: new - removed date, time
 
 ## TODO: Get english numbers?
 ## http://www.rexegg.com/regex-trick-numbers-in-english.html
